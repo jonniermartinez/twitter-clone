@@ -1,0 +1,13 @@
+body {
+    font-size: 62.5%;
+}
+.header{
+    margin: 2rem;
+}
+.header--icon{
+    color: var(--color-brand);
+    font-size: 2rem;
+}
+.main--titles{
+    margin: 20px;
+}
