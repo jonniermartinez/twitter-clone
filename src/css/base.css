@@ -1,5 +1,32 @@
+@font-face {
+    font-family: chirp-extended;
+    src: url(../../fonts/chirp/chirp-extended-heavy-web.otf);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: chirp;
+    src: url(../../fonts/chirp/chirp-bold-web.otf);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: chirp;
+    src: url(../../fonts/chirp/chirp-regular-web.otf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Google Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Google Sans Medium"),
+        url("../../fonts/sans/ProductSans-Medium.woff") format("woff");
+  }
+  
 :root{
     --color-brand: #1d9bf0;
+    --gray: rgba(128, 128, 128, 0.473);
 }
 *{
     margin: 0;

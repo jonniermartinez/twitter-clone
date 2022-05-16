@@ -1,13 +1,180 @@
-body {
+html {
     font-size: 62.5%;
+    font-family: chirp-extended;
 }
 .header{
     margin: 2rem;
 }
 .header--icon{
     color: var(--color-brand);
-    font-size: 2rem;
+    font-size: 3.8rem;
+    margin-bottom: 5.2rem;
+}
+.header--icon-white{
+    color: #fff;
+    font-size: 25rem;
+}
+.all-container{
+    width: 100vw;
+    max-width: 1424px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.image--background{
+    width: 50%;
+}
+.text-section{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
 }
 .main--titles{
-    margin: 20px;
+    font-family: chirp-extended;
+    font-weight: 700;
+
+}
+.titles--title{
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    opacity: .89;
+    margin-bottom: 4rem;
+}
+h1.titles--title{
+    font-size: 5.7rem;
+    line-height: 7.4rem;
+}
+h2.titles--title{
+    width: 35rem;
+    font-size: 2.7rem;
+    line-height: 33px;
+    margin-bottom: 3rem;
+}
+.main--create-accout{
+    width: 45%;
+}
+.button{
+    width: 29rem;
+    height: 3.3rem;
+    display: inline-block;
+    margin: .7rem auto;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: chirp;
+    font-weight: 700;
+    font-size: 1.3rem;
+    opacity: .85;
+    margin-bottom: 1.8rem;
+}
+.button span{
+    margin-right: 1.5rem;
+}
+.button--withe{
+    border: 1px solid var(--gray);
+    background: white;
+}
+.button--blue{
+    background: var(--color-brand);
+    color: white;
+    height: 3.5rem;
+    margin-bottom: .8rem;
+}
+.button--sign-in{
+    color: var(--color-brand );
+    margin-left: 0;
+}
+.login--lines{
+    width: 30rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.login--lines div{
+    width: 45%;
+    border-top: 1px solid var(--gray);
+}
+.login--lines span{
+    font-size: 1.5rem;
+}
+.login--legal-cookies{
+    width: 28rem;
+    opacity: .8;
+    font-size: .8rem;
+   margin-left: 1.8rem;
+   margin-bottom: 5rem;
+}
+.text--link{
+    color: var(--color-brand);
+}
+.main--subtitle-3{
+    font-size: 1.4rem;
+    opacity: .8;
+    margin-bottom: 1.7rem;
+}
+.image--background{
+    width: 100%;
+    height: 45vh;
+    background-color: var(--color-brand);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer--container{
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 940px;
+}
+.footer--items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer--container li {
+    font-size: 1.2rem;
+    margin: .5rem .8rem;
+}
+.footer--items li a{
+    color: gray;
+}
+@media (min-width:900px) {
+    .image--background{
+        width: 50%;
+        height: 100vh;
+    }
+    .header--icon-white{                                                                                                 font-size: calc(30rem + 1vw);
+    }
+    .text-section{
+        width: 50%;
+    }
+    h2.titles--title{
+        width: 40rem;
+        font-size: 2.7rem;
+        line-height: 33px;
+        margin-bottom: 3rem;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: black;
+    }
+    .button{
+        color: black;
+    }
+    .button--blue{
+        color: #fff;
+    }
+    .button--sign-in{
+        background-color: black;
+        color: var(--color-brand);
+    }
 }
